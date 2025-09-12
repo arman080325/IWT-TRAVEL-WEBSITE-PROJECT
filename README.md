@@ -14,7 +14,7 @@
 
 ---
 
-## 👨‍👩‍👦 Members  
+##🧑‍💻 Members  
 - Arman  
 - Sourav  
 - Anil  
@@ -65,8 +65,6 @@ virtual-travel-website/
 ├── assets/ # Static images/icons (optional)
 └── README.md # Documentation file
 
-yaml
-Copy code
 
 ---
 

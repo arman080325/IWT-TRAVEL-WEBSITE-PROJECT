@@ -177,7 +177,7 @@ document.getElementById('countrySelect').addEventListener('change', function () 
     });
 });
 ```
-👥 Team Roles
+👥 Team Roles </br>
 Arman → Frontend Development (HTML, JS API Integration)
 
 Sourav → UI/UX Design (CSS Styling, Layout)

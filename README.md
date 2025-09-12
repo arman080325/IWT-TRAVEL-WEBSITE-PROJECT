@@ -176,6 +176,7 @@ document.getElementById('countrySelect').addEventListener('change', function () 
       document.getElementById('imageGallery').innerHTML = images;
     });
 });
+```
 👥 Team Roles
 Arman → Frontend Development (HTML, JS API Integration)
 

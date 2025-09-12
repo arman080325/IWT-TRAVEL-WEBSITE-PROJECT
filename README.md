@@ -195,7 +195,8 @@ Saniket → Testing & Documentation
 
 🚀 Expandable with backend features (login, favorites, reviews)
 
-🏁 Footer
+</br>
+</br>
 Made with ❤️ by The Web Ninjas 🥷💻🌍✈️
 
 “Travel the world, one click at a time.” 🌍

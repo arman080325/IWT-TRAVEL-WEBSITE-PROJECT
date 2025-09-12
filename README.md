@@ -61,10 +61,10 @@ Later, we will integrate a backend to enable **user login, favorites, and review
 virtual-travel-website/
 │
 
-├── index.html # Main HTML page (UI layout)
-├── style.css # CSS styling for website
-├── script.js # JS for logic, fetch requests, interactivity
-├── assets/ # Static images/icons (optional)
+├── index.html # Main HTML page (UI layout) </br>
+├── style.css # CSS styling for website </br>
+├── script.js # JS for logic, fetch requests, interactivity </br>
+├── assets/ # Static images/icons (optional) </br>
 └── README.md # Documentation file
 
 

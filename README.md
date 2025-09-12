@@ -127,8 +127,10 @@ Get a free Unsplash API key from Unsplash Developers
 
 Replace YOUR_ACCESS_KEY in script.js with your key.
 
-📝 Sample Code
-HTML (Dropdown + Display Containers)
+📝 Sample Code  
+
+**HTML (Dropdown + Display Containers)**  
+```html
 <select id="countrySelect">
   <option value="india">India</option>
   <option value="japan">Japan</option>
@@ -139,6 +141,7 @@ HTML (Dropdown + Display Containers)
 <div id="imageGallery"></div>
 
 <script src="script.js"></script>
+
 
 JavaScript (API Integration)
 document.getElementById('countrySelect').addEventListener('change', function () {
@@ -162,10 +165,13 @@ document.getElementById('countrySelect').addEventListener('change', function () 
   fetch(`https://api.unsplash.com/search/photos?query=${country}&client_id=YOUR_ACCESS_KEY`)
     .then(res => res.json())
     .then(data => {
-      let images = data.results.map(img => `<img src="${img.urls.small}" alt="${country}">`).join('');
+      let images = data.results.map(img => 
+        `<img src="${img.urls.small}" alt="${country}">`
+      ).join('');
       document.getElementById('imageGallery').innerHTML = images;
     });
 });
+
 
 👥 Team Roles
 

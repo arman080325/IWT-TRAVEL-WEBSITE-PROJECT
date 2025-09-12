@@ -57,8 +57,10 @@ Later, we will integrate a backend to enable **user login, favorites, and review
 
 ## 📂 Project Structure  
 
+
 virtual-travel-website/
 │
+
 ├── index.html # Main HTML page (UI layout)
 ├── style.css # CSS styling for website
 ├── script.js # JS for logic, fetch requests, interactivity

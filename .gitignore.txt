@@ -1,0 +1,12 @@
+# Ignore system/IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.ipynb_checkpoints/
+__pycache__/
+*.log
+*.tmp
+
+# Ignore OneDrive sync files
+*.ini
+desktop.ini

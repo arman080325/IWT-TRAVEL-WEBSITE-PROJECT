@@ -1,487 +1,520 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TripBoss</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- font awesome cdn -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- fonts -->
-        <link rel = "stylesheet" href = "../font/fonts.css">
-        <!-- normalize css -->
-        <link rel = "stylesheet" href = "../css/normalize.css">
-        <!-- custom css -->
-        <link rel = "stylesheet" href = "../css/utility.css">
-        <link rel = "stylesheet" href = "../css/style.css">
-        <link rel = "stylesheet" href = "../css/responsive.css">
-    </head>
-    <body>
-        <!-- navbar  -->
-        <nav class = "navbar">
-            <div class = "container flex">
-                <a href = "html/index.html" class = "site-brand">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TripBoss</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="../font/fonts.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="html/index.html" class="site-brand">
+                Trip<span>Boss</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- header -->
+    <header class="flex">
+        <!-- Video Background -->
+        <div class="video-background">
+            <iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/J0zKBc5u7h4?autoplay=1&mute=1&loop=1&playlist=J0zKBc5u7h4&controls=0&showinfo=0&modestbranding=1&vq=hd1080"
+                title="WEBSITE FPV" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; fullscreen; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        
+        <!-- Header Content -->
+        <div class="container">
+            <div class="header-title">
+                <h1>Leave Your Footprints</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum maxime enim odit illum in
+                    molestias beatae doloremque, ratione optio.</p>
+            </div>
+            <div class="header-form">
+                <h2>Choose your Travel location:</h2>
+                <form class="flex">
+                    <input type="text" class="form-control" placeholder="Destination name">
+                    <input type="date" class="form-control" placeholder="Date">
+                    <input type="submit" class="btn" value="Search">
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- featured section -->
+    <section id="featured" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">know about some places before your travel</span>
+                <h2 class="lg-title">featured places</h2>
+            </div>
+
+            <div class="featured-row">
+                <div class="featured-item my-2 shadow">
+                    <img src="../images/13-burj-khalifa-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Burj Khalifa: Dubai, United Arab Emirates
+                        </span>
+                        <div>
+                            <p class="text">While many Middle Eastern countries boast architectural superlatives, the tallest of the futuristic towers – and the tallest building in the world – is Burj Khalifa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="../images/grand-canyon-credit-getty-images.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Grand Canyon: Arizona, United States
+                        </span>
+                        <div>
+                            <p class="text">The Grand Canyon, located in Arizona, is a UNESCO World Heritage site and one of the Seven Natural Wonders of the World. Its immense size and intricate landscape offer breathtaking views and a variety of outdoor activities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="../images/14-statue-of-liberty-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Statue of Liberty: New York, United States
+                        </span>
+                        <div>
+                            <p class="text">The Statue of Liberty, a gift from France to the United States, is an iconic symbol of freedom and democracy. Located on Liberty Island in New York Harbor, it welcomes millions of visitors each year.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="../images/featured-berlin-germany.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Berlin, Germany
+                        </span>
+                        <div>
+                            <p class="text">Berlin, the capital of Germany, is a city that is rich in history and culture. From the iconic Brandenburg Gate to the remnants of the Berlin Wall, there are countless landmarks to explore.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="../images/featured-khwaeng-wat-arun-thailand.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Khwaeng Wat Arun, Thailand 
+                        </span>
+                        <div>
+                            <p class="text">Khwaeng Wat Arun, also known as the Temple of Dawn, is a stunning Buddhist temple located on the Thonburi west bank of the Chao Phraya River in Bangkok. Its iconic spires are adorned with colorful porcelain and offer breathtaking views of the river and city.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="../images/featured-north-bondi-australia.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            North Bondi, Australia
+                        </span>
+                        <div>
+                            <p class="text">North Bondi is a beautiful beachside suburb in Sydney, Australia, known for its stunning beach, vibrant community, and outdoor lifestyle. It's a popular destination for surfers, sunbathers, and those looking to enjoy the coastal scenery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/featured-rome-italy.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Rome, Italy
+                        </span>
+                        <div>
+                            <p class="text">Rome, the capital of Italy, is a city that is steeped in history and culture. From the ancient ruins of the Colosseum to the stunning art of the Vatican, there is no shortage of things to see and do in this iconic city.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/16-colosseum-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Colosseum: Rome
+                        </span>
+                        <div>
+                            <p class="text">Now the remains of an enormous carved marble ellipse, the Colosseum was commissioned in A.D. 72 by Emperor Vespasian as an amphitheater to entertain the masses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/17-matterhorn-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Fuvahmulah, Maldives
+                        </span>
+                        <div>
+                            <p class="text">The jagged, 14,692-foot Matterhorn peak resembles a flint ax head above the posh resort area of Zermatt. The Matterhorn is higher than most of the peaks in the Alps near the Italian border.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/23-pisa-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Pisa, Italy
+                        </span>
+                        <div>
+                            <p class="text">The Leaning Tower of Pisa is a freestanding bell tower, known for its unintended tilt. It is part of the cathedral of the Italian city of Pisa and is a famous tourist attraction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/24-forbidden-city-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Forbidden City: Beijing, China
+                        </span>
+                        <div>
+                            <p class="text">The Forbidden City is a palace complex in Beijing, China, that served as the home of emperors and the political center of Chinese government for almost 500 years. It is a UNESCO World Heritage Site and is known for its stunning architecture and rich history.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/27-tulum-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Mayan Ruins: Tulum, Mexico
+                        </span>
+                        <div>
+                            <p class="text">The Mayan ruins of Tulum are a well-preserved ancient city located on a cliff overlooking the Caribbean Sea. It was a major port for the Mayan civilization and is known for its stunning coastal views and impressive archaeological sites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/29-disney-world-courtesy-of-matt-stroshane-disneyland.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Disney World: Orlando, Florida
+                        </span>
+                        <div>
+                            <p class="text">Walt Disney World Resort, commonly referred to as Disney World, is an entertainment complex in the Orlando area. It is the flagship destination of Disney's worldwide theme park empire and is known for its four theme parks, water parks, and numerous hotels and attractions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/30-waterfalls-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Iguazu Falls: Brazil and Argentina
+                        </span>
+                        <div>
+                            <p class="text">Iguazu Falls is a massive waterfall system located on the border of Brazil and Argentina. It is one of the largest and most impressive waterfall systems in the world, known for its stunning beauty and diverse wildlife.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/32-sydney-opera-house-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Sydney Opera House: Sydney, Australia
+                        </span>
+                        <div>
+                            <p class="text">The Sydney Opera House is a multi-venue performing arts center in Sydney, Australia. It is one of the most famous and distinctive buildings of the 20th century and is known for its unique architectural design and stunning harbor views.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/34-petra-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Petra: Jordan
+                        </span>
+                        <div>
+                            <p class="text">Petra is a historical and archaeological city in southern Jordan, famous for its rock-cut architecture and water conduit system. It is one of the New Seven Wonders of the World and a UNESCO World Heritage Site.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/38-kilimanjaro-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Mount Kilimanjaro: Tanzania
+                        </span>
+                        <div>
+                            <p class="text">Mount Kilimanjaro is the highest mountain in Africa, located in Tanzania. It is a dormant stratovolcano and is known for its stunning landscapes, diverse ecosystems, and challenging trekking routes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow featured-hidden">
+                    <img src="../images/42-great-wall-getty.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Great Wall of China: China
+                        </span>
+                        <div>
+                            <p class="text">The Great Wall of China is a series of fortifications made of various materials, built along the northern borders of China to protect against invasions. It is one of the most iconic symbols of China and a UNESCO World Heritage Site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button id="load-more-btn" class="btn">Load More Places</button>
+            </div>
+        </div>
+    </section>
+    <!-- end of featured section -->
+
+    <!-- services section -->
+    <section id="services" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">know about services that we offer</span>
+                <h2 class="lg-title">Our services</h2>
+            </div>
+
+            <div class="services-row">
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-hotel"></i>
+                    </span>
+                    <h3>Luxurious Hotel</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat
+                        velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </span>
+                    <h3>Trave Guide</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat
+                        velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-money-bill"></i>
+                    </span>
+                    <h3>Suitable Price</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat
+                        velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of services section -->
+
+    <!-- testimonials section -->
+    <section id="testimonials" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">what our clients say about us</span>
+                <h2 class="lg-title">testimonials</h2>
+            </div>
+
+            <div class="test-row">
+                <div class="test-item">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis,
+                        asperiores, velit iste eos officiis tempora magni quaerat quo consectetur expedita cum
+                        recusandae facere nam voluptate minus iusto eum. Delectus!</p>
+                    <div class="test-item-info">
+                        <img src="../images/test-1.jpg" alt="testimonial">
+                        <div>
+                            <h3>Kevin Wilson</h3>
+                            <p class="text">Trip to Brazil</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-item">
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ut dolores tenetur
+                        harum deserunt. Maxime tenetur consectetur recusandae nobis fugit iusto natus quibusdam nulla!
+                    </p>
+                    <div class="test-item-info">
+                        <img src="../images/test-2.jpg" alt="testimonial">
+                        <div>
+                            <h3>Ben Davis</h3>
+                            <p class="text">Trip to Maldives</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-item">
+                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sapiente amet
+                        expedita quae autem deleniti quo magni numquam facilis soluta dicta, praesentium ipsum, quos
+                        optio sed quibusdam! Reprehenderit recusandae provident id nemo!</p>
+                    <div class="test-item-info">
+                        <img src="../images/test-3.jpg" alt="testimonial">
+                        <div>
+                            <h3>Jaura Jones</h3>
+                            <p class="text">Trip to Thailand</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of testimonials section -->
+
+    <!-- video section -->
+    <section id="video">
+        <div class="video-wrapper flex">
+            <video loop>
+                <source src="../videos/video-section.mp4" type="video/mp4">
+            </video>
+            <button type="button" id="play-btn">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+    </section>
+    <!-- end of video section -->
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
                     Trip<span>Boss</span>
                 </a>
-
-                <button type = "button" id = "navbar-show-btn" class = "flex">
-                    <i class = "fas fa-bars"></i>
-                </button>
-                <div id = "navbar-collapse">
-                    <button type = "button" id = "navbar-close-btn" class = "flex">
-                        <i class = "fas fa-times"></i>
-                    </button>
-                    <ul class = "navbar-nav">
-                        <li class = "nav-item">
-                            <a href = "index.html" class = "nav-link">Home</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "gallery.html" class = "nav-link">Gallery</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "blog.html" class = "nav-link">Blog</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "about.html" class = "nav-link">About</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "contact.html" class = "nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam
+                    vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium
+                    reiciendis ipsa suscipit veritatis voluptate.</p>
             </div>
-        </nav>
-        <!-- end of navbar  -->
 
-        <!-- header -->
-        <header class = "flex">
-            <div class = "container">
-                <div class = "header-title">
-                    <h1>Leave Your Footprints</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum maxime enim odit illum in molestias beatae doloremque, ratione optio.</p>
-                </div>
-                <div class = "header-form">
-                    <h2>Choose your Travel location:</h2>
-                    <form class = "flex">
-                        <input type = "text" class = "form-control" placeholder="Destination name">
-                        <input type="date" class = "form-control" placeholder="Date">
-                        <input type="submit" class = "btn" value = "Search">
-                    </form>
-                </div>
+            <div class="footer-item">
+                <h2>Follow us on: </h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </header>
-        <!-- header -->
 
-        <!-- featured section -->
-        <section id = "featured" class = "py-4">
-            <div class = "container">
-                <div class = "title-wrap">
-                    <span class = "sm-title">know about some places before your travel</span>
-                    <h2 class = "lg-title">featured places</h2>
-                </div>
-
-                <div class = "featured-row">
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-reo-de-janeiro-brazil.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                Reo De Janeiro, Brazil
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-north-bondi-australia.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                North Bondi, Australia
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-berlin-germany.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                Berlin, Germany
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-khwaeng-wat-arun-thailand.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                Khwaeng wat arun, thailand
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-rome-italy.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                Rome, Italy
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/giza.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                Great Pyramid of Giza: Giza, Egypt
-                            </span>
-                            <div>
-                                <p class = "text">As the crown jewel of the Giza pyramid complex,the Great Pyramid of Giza is the last of the Seven Wonders of the Ancient World still standing with millions of visitors every year.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                Eiffel Tower: Paris
-                            </span>
-                            <div>
-                                <p class = "text">The Eiffel Tower can be appreciated at a distance by all Paris visitors, but for a unique experience, consider booking a tour. Completed for the 1889 Exposition Universelle after two years of construction, it has 1,665 steps to the top and elevators to two observation levels.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "featured-item my-2 shadow">
-                        <img src = "../images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
-                        <div class = "featured-item-content">
-                            <span>
-                                <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
-                            </span>
-                            <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href="#">Thailand</a></li>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">Maldives</a></li>
+                    <li><a href="#">Switzerland</a></li>
+                    <li><a href="#">Germany</a></li>
+                </ul>
             </div>
-        </section>
-        <!-- end of featured section -->
 
-        <!-- services section -->
-        <section id = "services" class = "py-4">
-            <div class = "container">
-                <div class = "title-wrap">
-                    <span class = "sm-title">know about services that we offer</span>
-                    <h2 class = "lg-title">Our services</h2>
-                </div>
-
-                <div class = "services-row">
-                    <div class = "services-item">
-                        <span class = "services-icon">
-                            <i class = "fas fa-hotel"></i>
-                        </span>
-                        <h3>Luxurious Hotel</h3>
-                        <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
-                        <a href = "#" class = "btn">Read more</a>
-                    </div>
-
-                    <div class = "services-item">
-                        <span class = "services-icon">
-                            <i class = "fas fa-map-marked-alt"></i>
-                        </span>
-                        <h3>Trave Guide</h3>
-                        <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
-                        <a href = "#" class = "btn">Read more</a>
-                    </div>
-
-                    <div class = "services-item">
-                        <span class = "services-icon">
-                            <i class = "fas fa-money-bill"></i>
-                        </span>
-                        <h3>Suitable Price</h3>
-                        <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
-                        <a href = "#" class = "btn">Read more</a>
-                    </div>
-                </div>
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" class="btn" value="Subscribe">
+                </form>
             </div>
-        </section>
-        <!-- end of services section -->
+        </div>
+    </footer>
+    <!-- end of footer -->
 
-        <!-- testimonials section -->
-        <section id = "testimonials" class = "py-4">
-            <div class = "container">
-                <div class = "title-wrap">
-                    <span class = "sm-title">what our clients say about us</span>
-                    <h2 class = "lg-title">testimonials</h2>
-                </div>
+    <!-- js -->
+    <script src="../js/script.js"></script>
+    <script>
+        // play/pause video
+        let video = document.querySelector('.video-wrapper video');
+        document.getElementById('play-btn').addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    </script>
+</body>
 
-                <div class = "test-row">
-                    <div class = "test-item">
-                        <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis, asperiores, velit iste eos officiis tempora magni quaerat quo consectetur expedita cum recusandae facere nam voluptate minus iusto eum. Delectus!</p>
-                        <div class = "test-item-info">
-                            <img src = "../images/test-1.jpg" alt = "testimonial">
-                            <div>
-                                <h3>Kevin Wilson</h3>
-                                <p class = "text">Trip to Brazil</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "test-item">
-                        <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ut dolores tenetur harum deserunt. Maxime tenetur consectetur recusandae nobis fugit iusto natus quibusdam nulla!</p>
-                        <div class = "test-item-info">
-                            <img src = "../images/test-2.jpg" alt = "testimonial">
-                            <div>
-                                <h3>Ben Davis</h3>
-                                <p class = "text">Trip to Maldives</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "test-item">
-                        <p class = "text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sapiente amet expedita quae autem deleniti quo magni numquam facilis soluta dicta, praesentium ipsum, quos optio sed quibusdam! Reprehenderit recusandae provident id nemo!</p>
-                        <div class = "test-item-info">
-                            <img src = "../images/test-3.jpg" alt = "testimonial">
-                            <div>
-                                <h3>Jaura Jones</h3>
-                                <p class = "text">Trip to Thailand</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of testimonials section -->
-
-        <!-- video section -->
-        <section id = "video">
-            <div class = "video-wrapper flex">
-                <video loop>
-                    <source src = "../videos/video-section.mp4" type = "video/mp4">
-                </video>
-                <button type = "button" id = "play-btn">
-                    <i class = "fas fa-play"></i>
-                </button>
-            </div>
-        </section>
-        <!-- end of video section -->
-
-        <!-- footer -->
-        <footer class = "py-4">
-            <div class = "container footer-row">
-                <div class = "footer-item">
-                    <a href = "index.html" class = "site-brand">
-                        Trip<span>Boss</span>
-                    </a>
-                    <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa suscipit veritatis voluptate.</p>
-                </div>
-
-                <div class = "footer-item">
-                    <h2>Follow us on: </h2>
-                    <ul class = "social-links">
-                        <li>
-                            <a href = "#">
-                                <i class = "fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "#">
-                                <i class = "fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "#">
-                                <i class = "fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "#">
-                                <i class = "fab fa-pinterest"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "#">
-                                <i class = "fab fa-google-plus"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class = "footer-item">
-                    <h2>Popular Places:</h2>
-                    <ul>
-                        <li><a href = "#">Thailand</a></li>
-                        <li><a href = "#">Australia</a></li>
-                        <li><a href = "#">Maldives</a></li>
-                        <li><a href = "#">Switzerland</a></li>
-                        <li><a href = "#">Germany</a></li>
-                    </ul>
-                </div>
-
-                <div class = "subscribe-form footer-item">
-                    <h2>Subscribe for Newsletter!</h2>
-                    <form class = "flex">
-                        <input type = "email" placeholder="Enter Email" class = "form-control">
-                        <input type = "submit" class = "btn" value = "Subscribe">
-                    </form>
-                </div>
-            </div>
-        </footer>
-        <!-- end of footer -->
-
-        <!-- js -->
-        <script src = "../js/script.js"></script>
-        <script>
-            // play/pause video
-            let video = document.querySelector('.video-wrapper video');
-            document.getElementById('play-btn').addEventListener('click', () => {
-                if(video.paused){
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            });
-        </script>
-    </body>
-</html>
+</html

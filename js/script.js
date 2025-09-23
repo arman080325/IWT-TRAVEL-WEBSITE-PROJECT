@@ -36,3 +36,47 @@ window.addEventListener('resize', () => {
         document.body.classList.remove("resize-animation-stopper");
     }, 400);
 });
+
+// Load More Functionality for Featured Places
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const hiddenItems = document.querySelectorAll('.featured-hidden');
+    const itemsPerLoad = 6; // Show 6 items at a time
+    let currentlyVisible = 0;
+
+    // Check if there are hidden items, if not hide the button
+    if (hiddenItems.length === 0) {
+        loadMoreBtn.style.display = 'none';
+        return;
+    }
+
+    loadMoreBtn.addEventListener('click', function() {
+        let itemsToShow = [];
+        
+        // Collect the next batch of hidden items
+        for (let i = currentlyVisible; i < currentlyVisible + itemsPerLoad && i < hiddenItems.length; i++) {
+            if (hiddenItems[i] && !hiddenItems[i].classList.contains('show')) {
+                itemsToShow.push(hiddenItems[i]);
+            }
+        }
+
+        // Show the items with animation
+        itemsToShow.forEach((item, index) => {
+            setTimeout(() => {
+                item.style.display = 'block';
+                // Force a reflow to ensure display change is applied
+                item.offsetHeight;
+                item.classList.add('show');
+            }, index * 100); // Stagger the animation by 100ms
+        });
+
+        currentlyVisible += itemsToShow.length;
+
+        // Hide the load more button if all items are shown
+        if (currentlyVisible >= hiddenItems.length) {
+            setTimeout(() => {
+                loadMoreBtn.style.display = 'none';
+            }, itemsToShow.length * 100 + 300);
+        }
+    });
+});

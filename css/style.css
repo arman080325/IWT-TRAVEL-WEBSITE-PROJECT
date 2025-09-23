@@ -103,15 +103,184 @@
 header{
     min-height: 100vh;
     padding-top: 7rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/header-bg.jpg) center/cover no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/header-bg.jpg) center/cover no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/header-bg.jpg) center/cover no-repeat;
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     color: #fff;
     text-align: center;
+    overflow: hidden;
+}
+
+/* Video Background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw; /* 16:9 Aspect Ratio */
+    min-width: 177.78vh; /* 16:9 Aspect Ratio */
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
+    border: none;
+    pointer-events: none;
+}
+
+/* Overlay for better text readability */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+/* Ensure header content is above overlay */
+header .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tablet and smaller desktop screens */
+@media (max-width: 1024px) {
+    .video-background iframe {
+        width: 100vw;
+        height: 56.25vw;
+        min-width: 177.78vh;
+        min-height: 100vh;
+    }
+}
+
+/* Mobile optimization for video background */
+@media (max-width: 768px) {
+    .video-background iframe {
+        width: 100vw;
+        height: 56.25vw;
+        min-width: 177.78vh;
+        min-height: 100vh;
+    }
+    
+    header {
+        padding-top: 5rem;
+    }
+    
+    .header-title h1 {
+        font-size: 2.2rem;
+    }
+    
+    .header-title p {
+        font-size: 1.1rem;
+        margin: 1.5rem auto;
+    }
+}
+
+/* Small phone screens */
+@media (max-width: 480px) {
+    .video-background iframe {
+        width: 100vw;
+        height: 56.25vw;
+        min-width: 177.78vh;
+        min-height: 100vh;
+    }
+    
+    header {
+        padding-top: 4rem;
+    }
+    
+    .header-title h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .header-title p {
+        font-size: 1rem;
+        margin: 1.2rem auto;
+        max-width: 90%;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 320px) {
+    .video-background iframe {
+        width: 100vw;
+        height: 56.25vw;
+        min-width: 177.78vh;
+        min-height: 100vh;
+    }
+    
+    header {
+        padding-top: 3rem;
+    }
+    
+    .header-title h1 {
+        font-size: 1.6rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .header-title p {
+        font-size: 0.9rem;
+        margin: 1rem auto;
+    }
+    
+    .header-form {
+        padding: 2rem 1.5rem;
+    }
+    
+    .header-form h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Additional responsive styles for header form */
+@media (max-width: 768px) {
+    .header-form {
+        padding: 2.5rem 2rem;
+        margin: 0 1rem;
+    }
+    
+    .header-form h2 {
+        font-size: 1.1rem;
+    }
+    
+    .header-form form .form-control {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+    
+    .header-form .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-form {
+        padding: 2rem 1.5rem;
+        margin: 0 0.5rem;
+    }
+    
+    .header-form form {
+        margin-top: 1.5rem;
+    }
+    
+    .header-form form .form-control {
+        margin-bottom: 1rem;
+        font-size: 0.85rem;
+    }
 }
 .header-title h1{
     font-size: 2.8rem;
@@ -845,4 +1014,57 @@ header.header-sm{
     font-size: 1.2rem;
     display: block;
     margin-bottom: 1rem;
+}
+iframe{
+    border: none;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Load More Functionality */
+.featured-hidden {
+    display: none;
+}
+
+.featured-hidden.show {
+    display: block;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.load-more-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#load-more-btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--trans);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 2rem 0;
+}
+
+#load-more-btn:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 198, 182, 0.3);
+}
+
+#load-more-btn:active {
+    transform: translateY(0);
 }
